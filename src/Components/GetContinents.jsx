@@ -6,7 +6,7 @@ import Countries from "./Countries";
 const GetContinents = () => {
 	const [continents, setContinents] = useState([]);
 	const [id, setId] = useState("");
-	const { error, loading, data } = useQuery(LOAD_CONTINENTS);
+	const { data } = useQuery(LOAD_CONTINENTS);
 
 	useEffect(() => {
 		setContinents(data?.continents);
